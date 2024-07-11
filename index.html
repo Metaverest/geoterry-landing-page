@@ -1,15 +1,198 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="tailwind-config.js"></script>
-    <style type="text/tailwindcss">
-      @import "global.css";
-    </style>
-  </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkly</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Style -->
+  <link rel="stylesheet" type="text/css" href="assets/fonts/unicons/unicons.css">
+  <link rel="stylesheet" href="assets/css/plugins.css">
+  <!-- Tailwindcss -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/colors/grape.css">
+  <link rel="preload" href="assets/css/fonts/space.css" as="style" onload="this.rel='stylesheet'">
+
+
+  <!-- Custom css -->
+  <!-- <Style>
+
+  </Style> -->
+</head>
+
+<body>
+  <div class="grow shrink-0">
+    <header>
+      <nav class="navbar navbar-expand-lg center-nav transparent !absolute navbar-light caret-none">
+        <div class="container xl:flex-row lg:flex-row !flex-nowrap items-center">
+          <div class="navbar-brand w-full">
+            <a href="index.html">
+              <img src="assets/img/logo.png" srcset="assets/img/logo-2x.png 2x" alt="logo">
+            </a>
+          </div>
+          <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+            <div class="offcanvas-header xl:hidden lg:hidden flex items-center justify-between flex-row p-6">
+              <h3 class="text-white xl:text-[1.5rem] !text-[calc(1.275rem_+_0.3vw)] !mb-0">Checkly</h3>
+              <button type="button" class="btn-close btn-close-white mr-[-0.75rem] m-0 p-0 leading-none text-[#605dba] transition-all duration-[0.2s] ease-in-out border-0 motion-reduce:transition-none before:text-[1.05rem] before:content-['\ed3b'] before:w-[1.8rem] before:h-[1.8rem] before:leading-[1.8rem] before:shadow-none before:transition-[background] before:duration-[0.2s] before:ease-in-out before:flex before:justify-center before:items-center before:m-0 before:p-0 before:rounded-[100%] hover:no-underline bg-inherit before:bg-[rgba(255,255,255,.08)] before:font-Unicons hover:before:bg-[rgba(0,0,0,.11)] focus:outline-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body xl:!ml-auto lg:!ml-auto flex  flex-col !h-full">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]" href="index.html">About us</a></li>
+                <li class="nav-item"><a class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]" href="index.html">News</a></li>
+                <li class="nav-item"><a class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]" href="index.html">Contact</a></li>
+              </ul>
+              <!-- /.navbar-nav -->
+              <div class="offcanvas-footer xl:hidden lg:hidden">
+                <div>
+                  <a href="mailto:first.last@email.com" class="link-inverse">info@checkly.com</a>
+                  <br> 00 (000) 000 00 00 <br>
+                  <nav class="nav social social-white mt-4">
+                  <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-twitter before:content-['\ed59'] !text-white text-[1rem]"></i></a>
+                  <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-facebook-f before:content-['\eae2'] !text-white text-[1rem]"></i></a>
+                  <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-dribbble before:content-['\eaa2'] !text-white text-[1rem]"></i></a>
+                  <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-instagram before:content-['\eb9c'] !text-white text-[1rem]"></i></a>
+                  <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-youtube before:content-['\edb5'] !text-white text-[1rem]"></i></a>
+                  </nav>
+                  <!-- /.social -->
+                </div>
+              </div>
+              <!-- /.offcanvas-footer -->
+            </div>
+            <!-- /.offcanvas-body -->
+          </div>
+          <!-- /.navbar-collapse -->
+          <div class="navbar-other w-full flex !ml-auto">
+            <ul class="navbar-nav !flex-row items-center !ml-auto">
+              <li class="nav-item dropdown language-select uppercase group m-lg-4">
+                <a class="nav-link dropdown-item dropdown-toggle after:!text-[#605dba] xl:!text-[.85rem] lg:!text-[.85rem] md:!text-[1.05rem] sm:!text-[1.05rem] xsm:!text-[1.05rem] hover:!text-[#605dba]" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vi</a>
+                <ul class="dropdown-menu group-hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]">
+                  <li class="nav-item"><a class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]" href="#">Vi</a></li>
+                  <li class="nav-item"><a class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]" href="#">En</a></li>
+                </ul>
+              </li>
+              <li class="nav-item hidden xl:block lg:block md:block">
+                <a href="#" class="btn btn-grape text-white !bg-[#605dba] border-[#605dba] hover:text-white hover:bg-[#605dba] hover:border-[#605dba] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#605dba] active:border-[#605dba] disabled:text-white disabled:bg-[#605dba] disabled:border-[#605dba] !rounded-[0.8rem]" target="_blank">Get Checkly!</a>
+              </li>
+              <li class="nav-item xl:hidden lg:hidden">
+                <button class="hamburger offcanvas-nav-btn"><span></span></button>
+              </li>
+            </ul>
+            <!-- /.navbar-nav -->
+          </div>
+        </div>
+        <!-- /.container -->
+      </nav>
+      <!-- /.navbar -->
+    </header>
+    <!-- /header -->
+
+  </div>
+
+  
+
+
+
+
+  <footer class="!bg-[#ffffff]">
+    <div class="container py-16 xl:!py-20 lg:!py-20 md:!py-20">
+      <div class="flex flex-wrap mx-[-15px] mt-[-30px] xl:mt-0 lg:mt-0">
+        <div class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:mt-0 lg:mt-0 mt-[30px]">
+          <div class="widget">
+            <img class="!mb-4" src="assets/img/logo-dark.png" srcset="assets/img/logo-dark%402x.png 2x" alt="image">
+            <p class="!mb-4">© 2023 Checkly. <br class="hidden xl:block lg:block">All rights reserved.</p>
+            <nav class="nav social">
+              <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-twitter before:content-['\ed59'] !text-[#5daed5] text-[1rem]"></i></a>
+              <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-facebook-f before:content-['\eae2'] !text-[#4470cf] text-[1rem]"></i></a>
+              <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-dribbble before:content-['\eaa2'] !text-[#e94d88] text-[1rem]"></i></a>
+              <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-instagram before:content-['\eb9c'] !text-[#d53581] text-[1rem]"></i></a>
+              <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-youtube before:content-['\edb5'] !text-[#c8312b] text-[1rem]"></i></a>
+            </nav>
+            <!-- /.social -->
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /column -->
+        <div class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:mt-0 lg:mt-0 mt-[30px]">
+          <div class="widget">
+            <h4 class="widget-title !mb-3">Get in Touch</h4>
+            <address class="xl:pr-[4rem] xxl:!pr-[5rem] not-italic leading-[inherit] block mb-4">99 Tan Mai, Hoang Mai, Hanoi, Vietnam</address>
+            <a class="text-[#60697b] hover:text-[#60697b]" href="mailto:first.last@email.com">info@checkly.com</a><br> 00 (000) 000 00 00
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /column -->
+        <div class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:mt-0 lg:mt-0 mt-[30px]">
+          <div class="widget">
+            <h4 class="widget-title !mb-3">Learn More</h4>
+            <ul class="pl-0 list-none !mb-0">
+              <li><a class="text-[#60697b] hover:text-[#605dba]" href="#">About Us</a></li>
+              <li class="mt-[0.35rem]"><a class="text-[#60697b] hover:text-[#605dba]" href="#">Our Story</a></li>
+              <li class="mt-[0.35rem]"><a class="text-[#60697b] hover:text-[#605dba]" href="#">Terms of Use</a></li>
+              <li class="mt-[0.35rem]"><a class="text-[#60697b] hover:text-[#605dba]" href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /column -->
+        <div class="md:w-full xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:mt-0 lg:mt-0 mt-[30px]">
+          <div class="widget">
+            <h4 class="widget-title !mb-3">Our Newsletter</h4>
+            <p class="!mb-5">Subscribe to our newsletter to get our checkly news & deals delivered to you.</p>
+            <div class="newsletter-wrapper">
+              <!-- Begin Mailchimp Signup Form -->
+              <div id="mc_embed_signup2">
+                <form action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a" method="post" id="mc-embedded-subscribe-form2" name="mc-embedded-subscribe-form" class="validate dark-fields" target="_blank" novalidate="">
+                  <div id="mc_embed_signup_scroll2">
+                    <div class="!text-left input-group form-floating !relative flex flex-wrap items-stretch w-full">
+                      <input type="email" value="" name="EMAIL" class="required form-control  relative block w-full text-[.75rem] font-medium text-[#60697b] bg-[#fefefe] bg-clip-padding border shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(8,60,130,0.07)] transition-[border-color] duration-[0.15s] ease-in-out focus:text-[#60697b] focus:bg-[rgba(255,255,255,.03)] focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] focus:!border-[#9fbcf0] focus-visible:!border-[#9fbcf0] focus-visible:!outline-0 placeholder:text-[#959ca9] placeholder:opacity-100 m-0 !pr-9 p-[.6rem_1rem] h-[calc(2.5rem_+_2px)] min-h-[calc(2.5rem_+_2px)] leading-[1.25]" placeholder="Email Address" id="mce-EMAIL2">
+                      <label class="!ml-[0.05rem] text-[#959ca9] text-[.75rem] absolute z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none origin-[0_0] px-4 py-[0.6rem] left-0 top-0" for="mce-EMAIL2">Email Address</label>
+                      <input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe2" class="btn btn-grape text-white !bg-[#605dba] border-[#605dba] hover:text-white hover:bg-[#605dba] hover:border-[#605dba] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#605dba] active:border-[#605dba] disabled:text-white disabled:bg-[#605dba] disabled:border-[#605dba] !relative z-[2] focus:z-[5] hover:!transform-none border-0">
+                    </div>
+                    <div id="mce-responses2" class="clear">
+                      <div class="response" id="mce-error-response2" style="display:none"></div>
+                      <div class="response" id="mce-success-response2" style="display:none"></div>
+                    </div> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ddc180777a163e0f9f66ee014_4b1bcfa0bc" tabindex="-1" value=""></div>
+                    <div class="clear"></div>
+                  </div>
+                </form>
+              </div>
+              <!--End mc_embed_signup-->
+            </div>
+            <!-- /.newsletter-wrapper -->
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /column -->
+      </div>
+      <!--/.row -->
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- progress wrapper -->
+  <div class="progress-wrap fixed w-[2.3rem] h-[2.3rem] cursor-pointer block shadow-[inset_0_0_0_0.1rem_rgba(128,130,134,0.25)] z-[1010] opacity-0 invisible translate-y-3 transition-all duration-[0.2s] ease-[linear,margin-right] delay-[0s] rounded-[100%] right-6 bottom-6 motion-reduce:transition-none after:absolute after:content-['\e951'] after:text-center after:leading-[2.3rem] after:text-[1.2rem] after:text-[#605dba] after:h-[2.3rem] after:w-[2.3rem] after:cursor-pointer after:block after:z-[1] after:transition-all after:duration-[0.2s] after:ease-linear after:left-0 after:top-0 motion-reduce:after:transition-none after:font-Unicons">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewbox="-1 -1 102 102">
+      <path class="fill-none stroke-[#605dba] stroke-[4] box-border transition-all duration-[0.2s] ease-linear motion-reduce:transition-none" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/theme.js"></script>
+</body>
+
 </html>
