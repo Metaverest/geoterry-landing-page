@@ -1,1 +1,3 @@
-# geoterry-landing-page
+# Checkly Landing Page - Vanilla
+
+
