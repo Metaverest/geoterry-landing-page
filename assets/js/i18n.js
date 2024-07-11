@@ -25,6 +25,7 @@ function loadLanguage(lang) {
             });
             document.title = data['title'];
             document.querySelector('meta[name="description"]').setAttribute('content', data['description']);
+            document.getElementById('current-language').innerHTML = `${languageNames[lang]} <i class="mi-chevron-down"></i>`;
         });
 }
 
