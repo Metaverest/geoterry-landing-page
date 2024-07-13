@@ -25,7 +25,9 @@ function loadLanguage(lang) {
             });
             document.title = data['title'];
             document.querySelector('meta[name="description"]').setAttribute('content', data['description']);
-            document.getElementById('current-language').textContent = `${languageNames[lang]}`;
+            document.getElementById('current-language').innerHTML = `<img class="lang" src="assets/img/icons/${lang}.png" alt="${languageNames[lang]}">`;
+
+            
         });
 }
 

@@ -1,0 +1,89 @@
+.active>.page-link, .page-link.active,
+.plyr__control--overlaid:focus, .plyr__control--overlaid:hover{
+  color: #605dba !important;
+}
+.accordion-wrapper .card-header button.collapsed {
+color: #343f52 !important;
+}
+.accordion-wrapper .card-header button:hover,
+.accordion-wrapper .card-header button{
+  color: #605dba !important;
+}
+section .marquee{
+  margin: 3.5rem -2rem;
+}
+.marquee {
+  --gap: 2rem;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  width: 120%;
+  padding: 0.7rem 0 0 0;
+  background-color: #000;
+  border: #000 .0625rem solid;
+  border-left: 0px;
+  /* transform: rotate(-4deg); */
+}
+
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: var(--gap);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.marquee__content li {
+  list-style-type: none;
+}
+@keyframes scroll {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+.marquee__content {
+  animation: scroll 15s linear infinite;
+}
+.overflow-hidden {
+  display: none;
+}
+.grow.shrink-0 {
+  background-color: black;
+}
+img.lang {
+  display: inline !important;
+  width: 30px;
+  margin-bottom: 5px;
+}
+
+:root {
+  --primary-color: #605dba;
+  --secondary-color: #f8f9fa;
+  --dark-color: #343f52;
+  --light-color: #f8f9fa;
+
+  background-color: black !important;
+}
+
+<div class="flex flex-wrap">
+<div class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full">
+  <img src="https://img.icons8.com/?size=100&id=6ozUksPEPg6G&format=png&color=ffffff"
+    class="w-32 h-32 m-4" alt="QR Code">
+  <p class="lead !text-[1.05rem] !leading-[1.6] font-medium">IOS</p>
+</div>
+</div>
+
+<div class="flex flex-wrap">
+<div class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full">
+  <img src="https://img.icons8.com/?size=100&id=6ozUksPEPg6G&format=png&color=ffffff"
+    class="w-32 h-32 m-4" alt="QR Code">
+  <p class="lead !text-[1.05rem] !leading-[1.6] font-medium">Google Play</p>
+</div>
+</div>

@@ -30,32 +30,49 @@
   <script src="assets/js/i18n.js"></script>
 
   <!-- Custom css -->
-  <!-- <Style>
-
-  </Style> -->
+  <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
 <body>
   <div class="grow shrink-0">
     <header>
-      <nav class="navbar navbar-expand-lg center-nav transparent !absolute navbar-light caret-none">
+      <nav class="navbar navbar-expand-lg transparent center-nav navbar-dark navbar-bg-[#21262c] !absolute">
         <div class="container xl:flex-row lg:flex-row !flex-nowrap items-center">
           <div class="navbar-brand w-full">
-            <a href="index.html">
-              <img src="assets/img/logo.png" srcset="assets/img/logo-2x.png 2x" alt="logo">
+            <a href="index.html" class="w-3">
+              <!-- div logo svg -->
+              <div>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.6324 5.47993L18.8667 4.26429C21.2905 1.87708 25.2365 1.818 27.6743 4.19145C28.598 5.09279 29.2119 6.25647 29.4296 7.51904C29.6474 8.78162 29.4581 10.0797 28.8883 11.2308C28.615 11.7807 28.5229 12.401 28.6248 13.0049C28.7269 13.6088 29.0178 14.1663 29.4571 14.5995C30.2649 13.8021 30.9052 12.8557 31.3415 11.8144C31.7778 10.7732 32.0015 9.65745 32 8.53102C31.9982 7.4046 31.7714 6.28952 31.3321 5.24949C30.8928 4.20945 30.2497 3.26486 29.4396 2.46966C26.0309 -0.868695 20.4978 -0.802262 17.0985 2.54548L5.33364 14.1323L4.36646 13.1797C1.90153 10.752 1.88582 6.78373 4.39423 4.39918C5.32273 3.51926 6.50566 2.94484 7.77976 2.75523C9.05385 2.56562 10.3563 2.77018 11.5073 3.34064C12.0327 3.60579 12.6297 3.70064 13.213 3.61165C13.7964 3.52266 14.3363 3.25438 14.7556 2.84513L14.7856 2.81574C14.7949 2.80661 14.8023 2.79575 14.8074 2.78377C14.8125 2.77182 14.8151 2.75898 14.8151 2.74603C14.8151 2.73307 14.8125 2.72023 14.8074 2.70828C14.8023 2.69632 14.7949 2.68545 14.7856 2.67631C13.1663 1.12157 10.9964 0.248276 8.73503 0.241215C6.47363 0.234156 4.29813 1.09388 2.66889 2.63848C-0.840668 5.97528 -0.828127 11.5241 2.62128 14.9213L14.3827 26.505L13.1333 27.7355C10.7095 30.1227 6.7633 30.1818 4.32567 27.8084C3.40196 26.9071 2.78812 25.7433 2.57035 24.4808C2.3526 23.2183 2.54184 21.9202 3.11153 20.769C3.38485 20.2191 3.47696 19.5988 3.37503 18.995C3.27307 18.391 2.98214 17.8334 2.54288 17.4003C1.73509 18.1978 1.09475 19.1441 0.658438 20.1853C0.222123 21.2267 -0.0016125 22.3423 8.74823e-06 23.4688C0.00163 24.5952 0.228576 25.7103 0.667887 26.7503C1.1072 27.7904 1.75026 28.735 2.56033 29.5301C5.96895 32.8687 11.5022 32.8024 14.9015 29.4545L26.6816 17.8522L27.6524 18.8084C30.0762 21.1956 30.1362 25.082 27.7264 27.4828C26.8112 28.3927 25.6296 28.9971 24.3477 29.2117C23.0658 29.4262 21.7479 29.2397 20.579 28.6786C20.0205 28.4092 19.3904 28.3184 18.777 28.4191C18.1636 28.5196 17.5973 28.8064 17.1575 29.2394C17.9673 30.035 18.9281 30.6658 19.9853 31.0955C21.0426 31.5252 22.1753 31.7456 23.3191 31.744C24.4628 31.7423 25.595 31.5188 26.6509 31.0861C27.707 30.6534 28.6661 30.02 29.4734 29.2222C32.8632 25.8651 32.7957 20.4154 29.3966 17.0677L17.6324 5.47993ZM16.1389 24.7745L7.0904 15.8627L15.8755 7.21046L24.924 16.1223L16.1389 24.7745Z"
+                    fill="white" />
+                </svg>
+              </div>
+              <!-- <span class="font-semibold !text-[calc(1.275rem_+_0.3vw)] !tracking-[normal]">Checkly</span> -->
+              <!-- <img src="assets/img/logo-black.png" style="width: 120px;" srcset="assets/img/logo-black.png" alt="logo"> -->
             </a>
           </div>
           <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
             <div class="offcanvas-header xl:hidden lg:hidden flex items-center justify-between flex-row p-6">
               <h3 class="text-white xl:text-[1.5rem] !text-[calc(1.275rem_+_0.3vw)] !mb-0">Checkly</h3>
-              <button type="button" class="btn-close btn-close-white mr-[-0.75rem] m-0 p-0 leading-none text-[#605dba] transition-all duration-[0.2s] ease-in-out border-0 motion-reduce:transition-none before:text-[1.05rem] before:content-['\ed3b'] before:w-[1.8rem] before:h-[1.8rem] before:leading-[1.8rem] before:shadow-none before:transition-[background] before:duration-[0.2s] before:ease-in-out before:flex before:justify-center before:items-center before:m-0 before:p-0 before:rounded-[100%] hover:no-underline bg-inherit before:bg-[rgba(255,255,255,.08)] before:font-Unicons hover:before:bg-[rgba(0,0,0,.11)] focus:outline-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <button type="button"
+                class="btn-close btn-close-white mr-[-0.75rem] m-0 p-0 leading-none text-[#605dba] transition-all duration-[0.2s] ease-in-out border-0 motion-reduce:transition-none before:text-[1.05rem] before:content-['\ed3b'] before:w-[1.8rem] before:h-[1.8rem] before:leading-[1.8rem] before:shadow-none before:transition-[background] before:duration-[0.2s] before:ease-in-out before:flex before:justify-center before:items-center before:m-0 before:p-0 before:rounded-[100%] hover:no-underline bg-inherit before:bg-[rgba(255,255,255,.08)] before:font-Unicons hover:before:bg-[rgba(0,0,0,.11)] focus:outline-0"
+                data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body xl:!ml-auto lg:!ml-auto flex  flex-col !h-full">
-              <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]" href="index.html" data-i18n="home">Home</a></li>
-                <li class="nav-item"><a class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]" href="index.html" data-i18n="about-us">About us</a></li>
-                <li class="nav-item"><a class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]" href="index.html" data-i18n="news">News</a></li>
-                <li class="nav-item"><a class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]" href="index.html" data-i18n="contact">Contact</a></li>
+            <div class="offcanvas-body xl:!ml-auto lg:!ml-auto flex flex-col !h-full">
+              <ul class="navbar-nav justify-start">
+                <li class="nav-item"><a
+                    class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]" href="index.html"
+                    data-i18n="home">Home</a></li>
+                <li class="nav-item"><a
+                    class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]" href="index.html"
+                    data-i18n="about-us">About us</a></li>
+                <li class="nav-item"><a
+                    class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]" href="index.html"
+                    data-i18n="news">News</a></li>
+                <li class="nav-item"><a
+                    class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]" href="index.html"
+                    data-i18n="contact">Contact</a></li>
               </ul>
               <!-- /.navbar-nav -->
               <div class="offcanvas-footer xl:hidden lg:hidden">
@@ -63,11 +80,16 @@
                   <a href="mailto:first.last@email.com" class="link-inverse">info@checkly.com</a>
                   <br> 00 (000) 000 00 00 <br>
                   <nav class="nav social social-white mt-4">
-                  <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-twitter before:content-['\ed59'] !text-white text-[1rem]"></i></a>
-                  <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-facebook-f before:content-['\eae2'] !text-white text-[1rem]"></i></a>
-                  <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-dribbble before:content-['\eaa2'] !text-white text-[1rem]"></i></a>
-                  <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-instagram before:content-['\eb9c'] !text-white text-[1rem]"></i></a>
-                  <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-youtube before:content-['\edb5'] !text-white text-[1rem]"></i></a>
+                    <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                      href="#"><i class="uil uil-twitter before:content-['\ed59'] !text-white text-[1rem]"></i></a>
+                    <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                      href="#"><i class="uil uil-facebook-f before:content-['\eae2'] !text-white text-[1rem]"></i></a>
+                    <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                      href="#"><i class="uil uil-dribbble before:content-['\eaa2'] !text-white text-[1rem]"></i></a>
+                    <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                      href="#"><i class="uil uil-instagram before:content-['\eb9c'] !text-white text-[1rem]"></i></a>
+                    <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                      href="#"><i class="uil uil-youtube before:content-['\edb5'] !text-white text-[1rem]"></i></a>
                   </nav>
                   <!-- /.social -->
                 </div>
@@ -80,14 +102,19 @@
           <div class="navbar-other w-full flex !ml-auto">
             <ul class="navbar-nav !flex-row items-center !ml-auto">
               <li class="nav-item dropdown language-select uppercase group m-lg-4">
-                <a class="nav-link dropdown-item dropdown-toggle after:!text-[#605dba] xl:!text-[.85rem] lg:!text-[.85rem] md:!text-[1.05rem] sm:!text-[1.05rem] xsm:!text-[1.05rem] hover:!text-[#605dba]" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="current-language">Vi</span></a>
+                <a class="nav-link dropdown-item dropdown-toggle after:!text-[#605dba] xl:!text-[.85rem] lg:!text-[.85rem] md:!text-[1.05rem] sm:!text-[1.05rem] xsm:!text-[1.05rem] hover:!text-[#605dba]"
+                  role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ngôn ngữ <span
+                    id="current-language"><img class="lang" src="assets/img/icons/en.png" alt="English"></span></a>
                 <ul class="dropdown-menu group-hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]">
-                  <li class="nav-item"><a onclick="loadLanguage('vi')" data-lang="vi" class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]">Vi</a></li>
-                  <li class="nav-item"><a onclick="loadLanguage('en')" data-lang="en" class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]">En</a></li>
+                  <li class="nav-item"><a onclick="loadLanguage('vi')" data-lang="vi"
+                      class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]"><img
+                        class="lang" src="assets/img/icons/vi.png" alt="Việt Nam"> Vi</a>
+                  </li>
+                  <li class="nav-item"><a onclick="loadLanguage('en')" data-lang="en"
+                      class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]"><img
+                        class="lang" src="assets/img/icons/en.png" alt="English"> En</a>
+                  </li>
                 </ul>
-              </li>
-              <li class="nav-item hidden xl:block lg:block md:block">
-                <a href="#" class="btn btn-grape text-white !bg-[#605dba] border-[#605dba] hover:text-white hover:bg-[#605dba] hover:border-[#605dba] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#605dba] active:border-[#605dba] disabled:text-white disabled:bg-[#605dba] disabled:border-[#605dba] !rounded-[0.8rem]" target="_blank"><span data-i18n="get-checkly">Get Checkly!</span></a>
               </li>
               <li class="nav-item xl:hidden lg:hidden">
                 <button class="hamburger offcanvas-nav-btn"><span></span></button>
@@ -101,74 +128,234 @@
       <!-- /.navbar -->
     </header>
     <!-- /header -->
+    <section
+      class="wrapper image-wrapper bg-full bg-image bg-overlay bg-overlay-light-600 [background-size:100%] h-screen bg-[center_center] bg-no-repeat bg-scroll relative z-0 before:content-[''] before:block before:absolute before:z-[1] before:w-full before:h-full before:left-0 before:top-0"
+      data-image-src="./assets/img/photos/bg1.png">
+      <div class="container pt-24 xl:pt-32 lg:pt-32 md:pt-50 pb-40">
+        <div class="flex flex-wrap mx-0 mt-[50px] mb-[50px] items-center text-center lg:text-left xl:text-left">
 
+          <div class="flex flex-wrap mx-[15px]">
+            <div
+              class="lg:w-8/12 xl:w-8/12 xxl:w-7/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto !text-center"
+              data-cues="slideInDown" data-group="page-title" data-delay="600">
+              <h2 class="text-[1.2rem] tracking-[0.05rem] !leading-[1.35] uppercase text-white mb-4">WELCOME TO</h2>
+              <div class="flex justify-center items-center mb-8">
+                <svg width="456" height="103" viewBox="0 0 456 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_d_1_1568)">
+                    <path
+                      d="M55.9098 86.5C49.6431 86.5 44.0431 85.6667 39.1098 84C34.1764 82.3333 30.0098 79.9333 26.6098 76.8C23.2098 73.6667 20.6098 69.9667 18.8098 65.7C17.0098 61.4333 16.1098 56.7 16.1098 51.5C16.1098 46.3 17.0098 41.5667 18.8098 37.3C20.6098 33.0333 23.2098 29.3333 26.6098 26.2C30.0764 23.0667 34.2431 20.6667 39.1098 19C44.0431 17.3333 49.6431 16.5 55.9098 16.5H66.5098V33.4H56.6098C53.5431 33.4 50.8431 33.8667 48.5098 34.8C46.1764 35.7333 44.2431 37.0333 42.7098 38.7C41.1764 40.3 40.0098 42.2 39.2098 44.4C38.4764 46.6 38.1098 48.9667 38.1098 51.5C38.1098 54.0333 38.4764 56.4 39.2098 58.6C40.0098 60.8 41.1764 62.7333 42.7098 64.4C44.2431 66 46.1764 67.2667 48.5098 68.2C50.8431 69.1333 53.5431 69.6 56.6098 69.6H66.5098V86.5H55.9098ZM73.0855 86.5V16.5H94.6855V42.7H115.586V16.5H137.186V86.5H115.586V59.6H94.6855V86.5H73.0855ZM166.039 86.5C162.039 86.5 158.373 85.6333 155.039 83.9C151.773 82.1667 149.173 79.8 147.239 76.8C145.306 73.7333 144.339 70.2 144.339 66.2C144.339 63.0667 145.039 60.1333 146.439 57.4C147.906 54.6 149.906 52.2667 152.439 50.4C150.239 48.6667 148.473 46.5667 147.139 44.1C145.806 41.5667 145.139 38.9667 145.139 36.3C145.139 32.3667 146.073 28.9333 147.939 26C149.873 23 152.439 20.6667 155.639 19C158.906 17.3333 162.473 16.5 166.339 16.5H197.439V33.4H171.139C170.073 33.4 169.106 33.6 168.239 34C167.373 34.3333 166.673 34.8667 166.139 35.6C165.673 36.2667 165.439 37.1333 165.439 38.2C165.439 39.2 165.673 40.0667 166.139 40.8C166.673 41.4667 167.373 42 168.239 42.4C169.106 42.7333 170.073 42.9 171.139 42.9H193.939V59.7H171.239C170.106 59.7 169.106 59.9 168.239 60.3C167.373 60.7 166.673 61.2667 166.139 62C165.673 62.7333 165.439 63.6333 165.439 64.7C165.439 65.7 165.673 66.5667 166.139 67.3C166.673 68.0333 167.373 68.6 168.239 69C169.106 69.3333 170.106 69.5 171.239 69.5H197.439V86.5H166.039ZM243.41 86.5C237.143 86.5 231.543 85.6667 226.61 84C221.676 82.3333 217.51 79.9333 214.11 76.8C210.71 73.6667 208.11 69.9667 206.31 65.7C204.51 61.4333 203.61 56.7 203.61 51.5C203.61 46.3 204.51 41.5667 206.31 37.3C208.11 33.0333 210.71 29.3333 214.11 26.2C217.576 23.0667 221.743 20.6667 226.61 19C231.543 17.3333 237.143 16.5 243.41 16.5H254.01V33.4H244.11C241.043 33.4 238.343 33.8667 236.01 34.8C233.676 35.7333 231.743 37.0333 230.21 38.7C228.676 40.3 227.51 42.2 226.71 44.4C225.976 46.6 225.61 48.9667 225.61 51.5C225.61 54.0333 225.976 56.4 226.71 58.6C227.51 60.8 228.676 62.7333 230.21 64.4C231.743 66 233.676 67.2667 236.01 68.2C238.343 69.1333 241.043 69.6 244.11 69.6H254.01V86.5H243.41ZM260.586 86.5V16.5H282.186V43.3H290.386C291.786 43.3 293.019 42.9667 294.086 42.3C295.219 41.6333 296.119 40.6667 296.786 39.4C297.452 38.1333 297.786 36.6333 297.786 34.9V16.5H319.386V35.3C319.386 39.3667 318.386 43.1333 316.386 46.6C314.452 50 311.852 52.8333 308.586 55.1L314.586 67.8C314.919 68.4667 315.386 69 315.986 69.4C316.586 69.8 317.286 70 318.086 70H323.386V86.5H312.086C307.819 86.5 304.419 85.7667 301.886 84.3C299.352 82.7667 297.419 80.7 296.086 78.1L287.486 60.1C287.219 60.1 286.952 60.1 286.686 60.1C286.419 60.1 286.152 60.1 285.886 60.1H282.186V86.5H260.586Z"
+                      fill="white" />
+                    <path
+                      d="M55.9098 86.5C49.6431 86.5 44.0431 85.6667 39.1098 84C34.1764 82.3333 30.0098 79.9333 26.6098 76.8C23.2098 73.6667 20.6098 69.9667 18.8098 65.7C17.0098 61.4333 16.1098 56.7 16.1098 51.5C16.1098 46.3 17.0098 41.5667 18.8098 37.3C20.6098 33.0333 23.2098 29.3333 26.6098 26.2C30.0764 23.0667 34.2431 20.6667 39.1098 19C44.0431 17.3333 49.6431 16.5 55.9098 16.5H66.5098V33.4H56.6098C53.5431 33.4 50.8431 33.8667 48.5098 34.8C46.1764 35.7333 44.2431 37.0333 42.7098 38.7C41.1764 40.3 40.0098 42.2 39.2098 44.4C38.4764 46.6 38.1098 48.9667 38.1098 51.5C38.1098 54.0333 38.4764 56.4 39.2098 58.6C40.0098 60.8 41.1764 62.7333 42.7098 64.4C44.2431 66 46.1764 67.2667 48.5098 68.2C50.8431 69.1333 53.5431 69.6 56.6098 69.6H66.5098V86.5H55.9098ZM73.0855 86.5V16.5H94.6855V42.7H115.586V16.5H137.186V86.5H115.586V59.6H94.6855V86.5H73.0855ZM166.039 86.5C162.039 86.5 158.373 85.6333 155.039 83.9C151.773 82.1667 149.173 79.8 147.239 76.8C145.306 73.7333 144.339 70.2 144.339 66.2C144.339 63.0667 145.039 60.1333 146.439 57.4C147.906 54.6 149.906 52.2667 152.439 50.4C150.239 48.6667 148.473 46.5667 147.139 44.1C145.806 41.5667 145.139 38.9667 145.139 36.3C145.139 32.3667 146.073 28.9333 147.939 26C149.873 23 152.439 20.6667 155.639 19C158.906 17.3333 162.473 16.5 166.339 16.5H197.439V33.4H171.139C170.073 33.4 169.106 33.6 168.239 34C167.373 34.3333 166.673 34.8667 166.139 35.6C165.673 36.2667 165.439 37.1333 165.439 38.2C165.439 39.2 165.673 40.0667 166.139 40.8C166.673 41.4667 167.373 42 168.239 42.4C169.106 42.7333 170.073 42.9 171.139 42.9H193.939V59.7H171.239C170.106 59.7 169.106 59.9 168.239 60.3C167.373 60.7 166.673 61.2667 166.139 62C165.673 62.7333 165.439 63.6333 165.439 64.7C165.439 65.7 165.673 66.5667 166.139 67.3C166.673 68.0333 167.373 68.6 168.239 69C169.106 69.3333 170.106 69.5 171.239 69.5H197.439V86.5H166.039ZM243.41 86.5C237.143 86.5 231.543 85.6667 226.61 84C221.676 82.3333 217.51 79.9333 214.11 76.8C210.71 73.6667 208.11 69.9667 206.31 65.7C204.51 61.4333 203.61 56.7 203.61 51.5C203.61 46.3 204.51 41.5667 206.31 37.3C208.11 33.0333 210.71 29.3333 214.11 26.2C217.576 23.0667 221.743 20.6667 226.61 19C231.543 17.3333 237.143 16.5 243.41 16.5H254.01V33.4H244.11C241.043 33.4 238.343 33.8667 236.01 34.8C233.676 35.7333 231.743 37.0333 230.21 38.7C228.676 40.3 227.51 42.2 226.71 44.4C225.976 46.6 225.61 48.9667 225.61 51.5C225.61 54.0333 225.976 56.4 226.71 58.6C227.51 60.8 228.676 62.7333 230.21 64.4C231.743 66 233.676 67.2667 236.01 68.2C238.343 69.1333 241.043 69.6 244.11 69.6H254.01V86.5H243.41ZM260.586 86.5V16.5H282.186V43.3H290.386C291.786 43.3 293.019 42.9667 294.086 42.3C295.219 41.6333 296.119 40.6667 296.786 39.4C297.452 38.1333 297.786 36.6333 297.786 34.9V16.5H319.386V35.3C319.386 39.3667 318.386 43.1333 316.386 46.6C314.452 50 311.852 52.8333 308.586 55.1L314.586 67.8C314.919 68.4667 315.386 69 315.986 69.4C316.586 69.8 317.286 70 318.086 70H323.386V86.5H312.086C307.819 86.5 304.419 85.7667 301.886 84.3C299.352 82.7667 297.419 80.7 296.086 78.1L287.486 60.1C287.219 60.1 286.952 60.1 286.686 60.1C286.419 60.1 286.152 60.1 285.886 60.1H282.186V86.5H260.586Z"
+                      fill="url(#paint0_linear_1_1568)" />
+                    <path
+                      d="M351.168 86.5C346.435 86.5 342.302 85.5 338.768 83.5C335.235 81.5 332.502 78.8667 330.568 75.6C328.635 72.2667 327.668 68.6 327.668 64.6V16.5H349.268V64.8C349.268 66.0667 349.702 67.2 350.568 68.2C351.502 69.1333 352.635 69.6 353.968 69.6H372.468V86.5H351.168ZM397.954 86.5V67.9C393.888 66.7 390.388 64.8333 387.454 62.3C384.588 59.7667 382.354 56.6333 380.754 52.9C379.221 49.1 378.454 44.8333 378.454 40.1V16.5H399.254V40.9C399.254 42.9667 399.621 44.8333 400.354 46.5C401.154 48.1 402.254 49.3667 403.654 50.3C405.121 51.1667 406.821 51.6 408.754 51.6C410.754 51.6 412.454 51.1667 413.854 50.3C415.321 49.3667 416.454 48.1 417.254 46.5C418.054 44.8333 418.454 42.9667 418.454 40.9V16.5H439.254V40.1C439.254 44.8333 438.454 49.1 436.854 52.9C435.254 56.6333 432.988 59.7667 430.054 62.3C427.121 64.8333 423.621 66.7 419.554 67.9V86.5H397.954Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <filter id="filter0_d_1_1568" x="0.309741" y="0.7" width="454.745" height="101.6"
+                      filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha" />
+                      <feOffset />
+                      <feGaussianBlur stdDeviation="7.9" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix type="matrix"
+                        values="0 0 0 0 0.976471 0 0 0 0 0.541176 0 0 0 0 0.027451 0 0 0 1 0" />
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1568" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1568" result="shape" />
+                    </filter>
+                    <linearGradient id="paint0_linear_1_1568" x1="-2.5" y1="51" x2="318.603" y2="51.3902"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.149758" stop-color="#F98A07" />
+                      <stop offset="1" stop-color="#ED6324" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <h2 class="text-[0.8rem] tracking-[0.05rem] !leading-[1.35] uppercase text-white mb-10">Chia sẻ cuộc sống
+                hàng ngày với bạn bè và xem họ đang làm gì trên Checkly. Hơn nữa, bạn có thể lập bản đồ một thế giới của
+                riêng mình ! Giữ liên lạc với bạn thân qua tin nhắn và trò chuyện video, và xây dựng cộng đồng của mình!
+              </h2>
+              <div class="flex justify-center mb-5 xl:mb-0 lg:mb-0 md:mb-0" data-cues="slideInDown"
+                data-group="page-title-buttons" data-delay="900">
+                <!-- Image QR -->
 
+                <div class="flex flex-wrap">
+                  <div class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full">
+                    <svg width="175" height="175" viewBox="0 0 175 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g filter="url(#filter0_d_1_1577)">
+                        <rect x="17.5" y="17.5" width="140" height="140" rx="10" fill="white"
+                          shape-rendering="crispEdges" />
+                        <rect x="20.5" y="20.5" width="134" height="134" rx="7" stroke="url(#paint0_linear_1_1577)"
+                          stroke-width="6" shape-rendering="crispEdges" />
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_1_1577" x="0.799999" y="0.799999" width="173.4" height="173.4"
+                          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                          <feColorMatrix in="SourceAlpha" type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                          <feOffset />
+                          <feGaussianBlur stdDeviation="8.35" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1577" />
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1577" result="shape" />
+                        </filter>
+                        <linearGradient id="paint0_linear_1_1577" x1="87.5" y1="17.5" x2="87.5" y2="157.5"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#05F177" />
+                          <stop offset="0.325" stop-color="#FFCA00" />
+                          <stop offset="0.65" stop-color="#F93748" />
+                          <stop offset="1" stop-color="#00D1FE" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <p class="lead !text-[1.05rem] !leading-[1.6] font-medium">IOS</p>
+                  </div>
 
-
-
-
+                  <div class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full">
+                    <svg width="175" height="175" viewBox="0 0 175 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g filter="url(#filter0_d_1_1577)">
+                        <rect x="17.5" y="17.5" width="140" height="140" rx="10" fill="white"
+                          shape-rendering="crispEdges" />
+                        <rect x="20.5" y="20.5" width="134" height="134" rx="7" stroke="url(#paint0_linear_1_1577)"
+                          stroke-width="6" shape-rendering="crispEdges" />
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_1_1577" x="0.799999" y="0.799999" width="173.4" height="173.4"
+                          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                          <feColorMatrix in="SourceAlpha" type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                          <feOffset />
+                          <feGaussianBlur stdDeviation="8.35" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1577" />
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1577" result="shape" />
+                        </filter>
+                        <linearGradient id="paint0_linear_1_1577" x1="87.5" y1="17.5" x2="87.5" y2="157.5"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#05F177" />
+                          <stop offset="0.325" stop-color="#FFCA00" />
+                          <stop offset="0.65" stop-color="#F93748" />
+                          <stop offset="1" stop-color="#00D1FE" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <p class="lead !text-[1.05rem] !leading-[1.6] font-medium">Google Play</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/column -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+        <div class="overflow-hidden" style="z-index:1;">
+          <div class="divider text-[#fefefe] mx-[-0.5rem]">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 100">
+              <g fill="currentColor">
+                <polygon points="1440 100 0 100 0 85 1440 0 1440 100"></polygon>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <!-- /.overflow-hidden -->
+      </div>
+    </section>
+    <!-- /section -->
   </div>
 
   <footer class="!bg-[#ffffff]">
     <div class="container py-16 xl:!py-20 lg:!py-20 md:!py-20">
       <div class="flex flex-wrap mx-[-15px] mt-[-30px] xl:mt-0 lg:mt-0">
-        <div class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:mt-0 lg:mt-0 mt-[30px]">
+        <div
+          class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:mt-0 lg:mt-0 mt-[30px]">
           <div class="widget">
-            <img class="!mb-4" src="assets/img/logo-dark.png" srcset="assets/img/logo-dark%402x.png 2x" alt="image">
-            <p class="!mb-4">© 2023 Checkly. <br class="hidden xl:block lg:block"><span data-i18n="all-rignts-reserved">All rights reserved.</span> </p>
+            <!-- <img class="!mb-4" src="assets/img/logo-dark.png" srcset="assets/img/logo-dark%402x.png 2x" alt="image"> -->
+            <span class="font-semibold !text-[calc(1.275rem_+_0.3vw)] !tracking-[normal]">Checkly</span>
+            <p class="!mb-4">© 2023 Checkly. <br class="hidden xl:block lg:block"><span
+                data-i18n="all-rignts-reserved">All rights reserved.</span> </p>
             <nav class="nav social">
-              <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-twitter before:content-['\ed59'] !text-[#5daed5] text-[1rem]"></i></a>
-              <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-facebook-f before:content-['\eae2'] !text-[#4470cf] text-[1rem]"></i></a>
-              <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-dribbble before:content-['\eaa2'] !text-[#e94d88] text-[1rem]"></i></a>
-              <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-instagram before:content-['\eb9c'] !text-[#d53581] text-[1rem]"></i></a>
-              <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-youtube before:content-['\edb5'] !text-[#c8312b] text-[1rem]"></i></a>
+              <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                href="#"><i class="uil uil-twitter before:content-['\ed59'] !text-[#5daed5] text-[1rem]"></i></a>
+              <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                href="#"><i class="uil uil-facebook-f before:content-['\eae2'] !text-[#4470cf] text-[1rem]"></i></a>
+              <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                href="#"><i class="uil uil-dribbble before:content-['\eaa2'] !text-[#e94d88] text-[1rem]"></i></a>
+              <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                href="#"><i class="uil uil-instagram before:content-['\eb9c'] !text-[#d53581] text-[1rem]"></i></a>
+              <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                href="#"><i class="uil uil-youtube before:content-['\edb5'] !text-[#c8312b] text-[1rem]"></i></a>
             </nav>
             <!-- /.social -->
           </div>
           <!-- /.widget -->
         </div>
         <!-- /column -->
-        <div class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:mt-0 lg:mt-0 mt-[30px]">
+        <div
+          class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:mt-0 lg:mt-0 mt-[30px]">
           <div class="widget">
             <h4 class="widget-title !mb-3" data-i18n="get-in-touch">Get in Touch</h4>
-            <address class="xl:pr-[4rem] xxl:!pr-[5rem] not-italic leading-[inherit] block mb-4">99 Tan Mai, Hoang Mai, Hanoi, Vietnam</address>
-            <a class="text-[#60697b] hover:text-[#60697b]" href="mailto:first.last@email.com">info@checkly.com</a><br> 00 (000) 000 00 00
+            <address class="xl:pr-[4rem] xxl:!pr-[5rem] not-italic leading-[inherit] block mb-4">99 Tan Mai, Hoang Mai,
+              Hanoi, Vietnam</address>
+            <a class="text-[#60697b] hover:text-[#60697b]" href="mailto:first.last@email.com">info@checkly.com</a><br>
+            00 (000) 000 00 00
           </div>
           <!-- /.widget -->
         </div>
         <!-- /column -->
-        <div class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:mt-0 lg:mt-0 mt-[30px]">
+        <div
+          class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:mt-0 lg:mt-0 mt-[30px]">
           <div class="widget">
             <h4 class="widget-title !mb-3" data-i18n="learn-more">Learn More</h4>
             <ul class="pl-0 list-none !mb-0">
               <li><a class="text-[#60697b] hover:text-[#605dba]" href="#" data-i18n="about-us">About Us</a></li>
-              <li class="mt-[0.35rem]"><a class="text-[#60697b] hover:text-[#605dba]" href="#" data-i18n="our-story">Our Story</a></li>
-              <li class="mt-[0.35rem]"><a class="text-[#60697b] hover:text-[#605dba]" href="#" data-i18n="terms-of-use">Terms of Use</a></li>
-              <li class="mt-[0.35rem]"><a class="text-[#60697b] hover:text-[#605dba]" href="#" data-i18n="privacy-policy">Privacy Policy</a></li>
+              <li class="mt-[0.35rem]"><a class="text-[#60697b] hover:text-[#605dba]" href="#" data-i18n="our-story">Our
+                  Story</a></li>
+              <li class="mt-[0.35rem]"><a class="text-[#60697b] hover:text-[#605dba]" href="#"
+                  data-i18n="terms-of-use">Terms of Use</a></li>
+              <li class="mt-[0.35rem]"><a class="text-[#60697b] hover:text-[#605dba]" href="#"
+                  data-i18n="privacy-policy">Privacy Policy</a></li>
             </ul>
           </div>
           <!-- /.widget -->
         </div>
         <!-- /column -->
-        <div class="md:w-full xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:mt-0 lg:mt-0 mt-[30px]">
+        <div
+          class="md:w-full xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:mt-0 lg:mt-0 mt-[30px]">
           <div class="widget">
             <h4 class="widget-title !mb-3" data-i18n="our-newsletter">Our Newsletter</h4>
-            <p class="!mb-5" data-i18n="subscribe-to-our-newsletter-to-get-our-checkly-news">Subscribe to our newsletter to get our checkly news & deals delivered to you.</p>
+            <p class="!mb-5" data-i18n="subscribe-to-our-newsletter-to-get-our-checkly-news">Subscribe to our newsletter
+              to get our checkly news & deals delivered to you.</p>
             <div class="newsletter-wrapper">
               <!-- Begin Mailchimp Signup Form -->
               <div id="mc_embed_signup2">
-                <form action="#" method="post" id="mc-embedded-subscribe-form2" name="mc-embedded-subscribe-form" class="validate dark-fields" target="_blank" novalidate="">
+                <form action="#" method="post" id="mc-embedded-subscribe-form2" name="mc-embedded-subscribe-form"
+                  class="validate dark-fields" target="_blank" novalidate="">
                   <div id="mc_embed_signup_scroll2">
                     <div class="!text-left input-group form-floating !relative flex flex-wrap items-stretch w-full">
-                      <input type="email" value="" name="EMAIL" class="required form-control  relative block w-full text-[.75rem] font-medium text-[#60697b] bg-[#fefefe] bg-clip-padding border shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(8,60,130,0.07)] transition-[border-color] duration-[0.15s] ease-in-out focus:text-[#60697b] focus:bg-[rgba(255,255,255,.03)] focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] focus:!border-[#9fbcf0] focus-visible:!border-[#9fbcf0] focus-visible:!outline-0 placeholder:text-[#959ca9] placeholder:opacity-100 m-0 !pr-9 p-[.6rem_1rem] h-[calc(2.5rem_+_2px)] min-h-[calc(2.5rem_+_2px)] leading-[1.25]" placeholder="Email Address" id="mce-EMAIL2">
-                      <label class="!ml-[0.05rem] text-[#959ca9] text-[.75rem] absolute z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none origin-[0_0] px-4 py-[0.6rem] left-0 top-0" for="mce-EMAIL2" data-i18n="email-address">Email Address</label>
-                      <input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe2" class="btn btn-grape text-white !bg-[#605dba] border-[#605dba] hover:text-white hover:bg-[#605dba] hover:border-[#605dba] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#605dba] active:border-[#605dba] disabled:text-white disabled:bg-[#605dba] disabled:border-[#605dba] !relative z-[2] focus:z-[5] hover:!transform-none border-0">
+                      <input type="email" value="" name="EMAIL"
+                        class="required form-control  relative block w-full text-[.75rem] font-medium text-[#60697b] bg-[#fefefe] bg-clip-padding border shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(8,60,130,0.07)] transition-[border-color] duration-[0.15s] ease-in-out focus:text-[#60697b] focus:bg-[rgba(255,255,255,.03)] focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] focus:!border-[#9fbcf0] focus-visible:!border-[#9fbcf0] focus-visible:!outline-0 placeholder:text-[#959ca9] placeholder:opacity-100 m-0 !pr-9 p-[.6rem_1rem] h-[calc(2.5rem_+_2px)] min-h-[calc(2.5rem_+_2px)] leading-[1.25]"
+                        placeholder="Email Address" id="mce-EMAIL2">
+                      <label
+                        class="!ml-[0.05rem] text-[#959ca9] text-[.75rem] absolute z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none origin-[0_0] px-4 py-[0.6rem] left-0 top-0"
+                        for="mce-EMAIL2" data-i18n="email-address">Email Address</label>
+                      <input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe2"
+                        class="btn btn-grape text-white !bg-[#605dba] border-[#605dba] hover:text-white hover:bg-[#605dba] hover:border-[#605dba] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#605dba] active:border-[#605dba] disabled:text-white disabled:bg-[#605dba] disabled:border-[#605dba] !relative z-[2] focus:z-[5] hover:!transform-none border-0">
                     </div>
                     <div id="mce-responses2" class="clear">
                       <div class="response" id="mce-error-response2" style="display:none"></div>
                       <div class="response" id="mce-success-response2" style="display:none"></div>
-                    </div> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ddc180777a163e0f9f66ee014_4b1bcfa0bc" tabindex="-1" value=""></div>
+                    </div>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                        name="b_ddc180777a163e0f9f66ee014_4b1bcfa0bc" tabindex="-1" value=""></div>
                     <div class="clear"></div>
                   </div>
                 </form>
@@ -187,9 +374,12 @@
   </footer>
 
   <!-- progress wrapper -->
-  <div class="progress-wrap fixed w-[2.3rem] h-[2.3rem] cursor-pointer block shadow-[inset_0_0_0_0.1rem_rgba(128,130,134,0.25)] z-[1010] opacity-0 invisible translate-y-3 transition-all duration-[0.2s] ease-[linear,margin-right] delay-[0s] rounded-[100%] right-6 bottom-6 motion-reduce:transition-none after:absolute after:content-['\e951'] after:text-center after:leading-[2.3rem] after:text-[1.2rem] after:text-[#605dba] after:h-[2.3rem] after:w-[2.3rem] after:cursor-pointer after:block after:z-[1] after:transition-all after:duration-[0.2s] after:ease-linear after:left-0 after:top-0 motion-reduce:after:transition-none after:font-Unicons">
+  <div
+    class="progress-wrap fixed w-[2.3rem] h-[2.3rem] cursor-pointer block shadow-[inset_0_0_0_0.1rem_rgba(128,130,134,0.25)] z-[1010] opacity-0 invisible translate-y-3 transition-all duration-[0.2s] ease-[linear,margin-right] delay-[0s] rounded-[100%] right-6 bottom-6 motion-reduce:transition-none after:absolute after:content-['\e951'] after:text-center after:leading-[2.3rem] after:text-[1.2rem] after:text-[#605dba] after:h-[2.3rem] after:w-[2.3rem] after:cursor-pointer after:block after:z-[1] after:transition-all after:duration-[0.2s] after:ease-linear after:left-0 after:top-0 motion-reduce:after:transition-none after:font-Unicons">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewbox="-1 -1 102 102">
-      <path class="fill-none stroke-[#605dba] stroke-[4] box-border transition-all duration-[0.2s] ease-linear motion-reduce:transition-none" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+      <path
+        class="fill-none stroke-[#605dba] stroke-[4] box-border transition-all duration-[0.2s] ease-linear motion-reduce:transition-none"
+        d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
     </svg>
   </div>
 
