@@ -38,11 +38,11 @@
     <header>
       <nav class="navbar navbar-expand-lg transparent center-nav navbar-dark navbar-bg-[#21262c] !absolute">
         <div class="container xl:flex-row lg:flex-row !flex-nowrap items-center">
-          <div class="navbar-brand w-full">
+          <div class="navbar-brand">
             <a href="index.html" class="w-3">
               <!-- div logo svg -->
-              <div>
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div class="logo-svg">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="black" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M17.6324 5.47993L18.8667 4.26429C21.2905 1.87708 25.2365 1.818 27.6743 4.19145C28.598 5.09279 29.2119 6.25647 29.4296 7.51904C29.6474 8.78162 29.4581 10.0797 28.8883 11.2308C28.615 11.7807 28.5229 12.401 28.6248 13.0049C28.7269 13.6088 29.0178 14.1663 29.4571 14.5995C30.2649 13.8021 30.9052 12.8557 31.3415 11.8144C31.7778 10.7732 32.0015 9.65745 32 8.53102C31.9982 7.4046 31.7714 6.28952 31.3321 5.24949C30.8928 4.20945 30.2497 3.26486 29.4396 2.46966C26.0309 -0.868695 20.4978 -0.802262 17.0985 2.54548L5.33364 14.1323L4.36646 13.1797C1.90153 10.752 1.88582 6.78373 4.39423 4.39918C5.32273 3.51926 6.50566 2.94484 7.77976 2.75523C9.05385 2.56562 10.3563 2.77018 11.5073 3.34064C12.0327 3.60579 12.6297 3.70064 13.213 3.61165C13.7964 3.52266 14.3363 3.25438 14.7556 2.84513L14.7856 2.81574C14.7949 2.80661 14.8023 2.79575 14.8074 2.78377C14.8125 2.77182 14.8151 2.75898 14.8151 2.74603C14.8151 2.73307 14.8125 2.72023 14.8074 2.70828C14.8023 2.69632 14.7949 2.68545 14.7856 2.67631C13.1663 1.12157 10.9964 0.248276 8.73503 0.241215C6.47363 0.234156 4.29813 1.09388 2.66889 2.63848C-0.840668 5.97528 -0.828127 11.5241 2.62128 14.9213L14.3827 26.505L13.1333 27.7355C10.7095 30.1227 6.7633 30.1818 4.32567 27.8084C3.40196 26.9071 2.78812 25.7433 2.57035 24.4808C2.3526 23.2183 2.54184 21.9202 3.11153 20.769C3.38485 20.2191 3.47696 19.5988 3.37503 18.995C3.27307 18.391 2.98214 17.8334 2.54288 17.4003C1.73509 18.1978 1.09475 19.1441 0.658438 20.1853C0.222123 21.2267 -0.0016125 22.3423 8.74823e-06 23.4688C0.00163 24.5952 0.228576 25.7103 0.667887 26.7503C1.1072 27.7904 1.75026 28.735 2.56033 29.5301C5.96895 32.8687 11.5022 32.8024 14.9015 29.4545L26.6816 17.8522L27.6524 18.8084C30.0762 21.1956 30.1362 25.082 27.7264 27.4828C26.8112 28.3927 25.6296 28.9971 24.3477 29.2117C23.0658 29.4262 21.7479 29.2397 20.579 28.6786C20.0205 28.4092 19.3904 28.3184 18.777 28.4191C18.1636 28.5196 17.5973 28.8064 17.1575 29.2394C17.9673 30.035 18.9281 30.6658 19.9853 31.0955C21.0426 31.5252 22.1753 31.7456 23.3191 31.744C24.4628 31.7423 25.595 31.5188 26.6509 31.0861C27.707 30.6534 28.6661 30.02 29.4734 29.2222C32.8632 25.8651 32.7957 20.4154 29.3966 17.0677L17.6324 5.47993ZM16.1389 24.7745L7.0904 15.8627L15.8755 7.21046L24.924 16.1223L16.1389 24.7745Z"
                     fill="white" />
@@ -52,27 +52,21 @@
               <!-- <img src="assets/img/logo-black.png" style="width: 120px;" srcset="assets/img/logo-black.png" alt="logo"> -->
             </a>
           </div>
-          <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+          <div class="navbar-collapse offcanvas offcanvas-nav">
             <div class="offcanvas-header xl:hidden lg:hidden flex items-center justify-between flex-row p-6">
               <h3 class="text-white xl:text-[1.5rem] !text-[calc(1.275rem_+_0.3vw)] !mb-0">Checkly</h3>
               <button type="button"
-                class="btn-close btn-close-white mr-[-0.75rem] m-0 p-0 leading-none text-[#605dba] transition-all duration-[0.2s] ease-in-out border-0 motion-reduce:transition-none before:text-[1.05rem] before:content-['\ed3b'] before:w-[1.8rem] before:h-[1.8rem] before:leading-[1.8rem] before:shadow-none before:transition-[background] before:duration-[0.2s] before:ease-in-out before:flex before:justify-center before:items-center before:m-0 before:p-0 before:rounded-[100%] hover:no-underline bg-inherit before:bg-[rgba(255,255,255,.08)] before:font-Unicons hover:before:bg-[rgba(0,0,0,.11)] focus:outline-0"
+                class="btn-close btn-close-white mr-[-0.75rem] m-0 p-0 leading-none text-[#ED6424] transition-all duration-[0.2s] ease-in-out border-0 motion-reduce:transition-none before:text-[1.05rem] before:content-['\ed3b'] before:w-[1.8rem] before:h-[1.8rem] before:leading-[1.8rem] before:shadow-none before:transition-[background] before:duration-[0.2s] before:ease-in-out before:flex before:justify-center before:items-center before:m-0 before:p-0 before:rounded-[100%] hover:no-underline bg-inherit before:bg-[rgba(255,255,255,.08)] before:font-Unicons hover:before:bg-[rgba(0,0,0,.11)] focus:outline-0"
                 data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body xl:!ml-auto lg:!ml-auto flex flex-col !h-full">
               <ul class="navbar-nav justify-start">
                 <li class="nav-item"><a
-                    class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]" href="index.html"
-                    data-i18n="home">Home</a></li>
+                    class="nav-link font-bold !tracking-[normal] hover:!text-[#ED6424] !text-[.85rem]" href="index.html"
+                    data-i18n="home">Checkly</a></li>
                 <li class="nav-item"><a
-                    class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]" href="index.html"
+                    class="nav-link font-bold !tracking-[normal] hover:!text-[#ED6424] !text-[.85rem]" href="index.html"
                     data-i18n="about-us">About us</a></li>
-                <li class="nav-item"><a
-                    class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]" href="index.html"
-                    data-i18n="news">News</a></li>
-                <li class="nav-item"><a
-                    class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]" href="index.html"
-                    data-i18n="contact">Contact</a></li>
               </ul>
               <!-- /.navbar-nav -->
               <div class="offcanvas-footer xl:hidden lg:hidden">
@@ -101,18 +95,18 @@
           <!-- /.navbar-collapse -->
           <div class="navbar-other w-full flex !ml-auto">
             <ul class="navbar-nav !flex-row items-center !ml-auto">
-              <li class="nav-item dropdown language-select uppercase group m-lg-4">
-                <a class="nav-link dropdown-item dropdown-toggle after:!text-[#605dba] xl:!text-[.85rem] lg:!text-[.85rem] md:!text-[1.05rem] sm:!text-[1.05rem] xsm:!text-[1.05rem] hover:!text-[#605dba]"
+              <li class="nav-item dropdown language-select group m-lg-4">
+                <a class="nav-link dropdown-item dropdown-toggle after:!text-[#ED6424] xl:!text-[.85rem] lg:!text-[.85rem] md:!text-[1.05rem] sm:!text-[1.05rem] xsm:!text-[1.05rem] hover:!text-[#ED6424]"
                   role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ngôn ngữ <span
                     id="current-language"><img class="lang" src="assets/img/icons/en.png" alt="English"></span></a>
                 <ul class="dropdown-menu group-hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]">
                   <li class="nav-item"><a onclick="loadLanguage('vi')" data-lang="vi"
-                      class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]"><img
-                        class="lang" src="assets/img/icons/vi.png" alt="Việt Nam"> Vi</a>
+                      class="dropdown-item hover:!text-[#ED6424] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]"><img
+                        class="lang" src="assets/img/icons/vi.png" alt="Việt Nam"> VIE</a>
                   </li>
                   <li class="nav-item"><a onclick="loadLanguage('en')" data-lang="en"
-                      class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]"><img
-                        class="lang" src="assets/img/icons/en.png" alt="English"> En</a>
+                      class="dropdown-item hover:!text-[#ED6424] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]"><img
+                        class="lang" src="assets/img/icons/en.png" alt="English"> ENG</a>
                   </li>
                 </ul>
               </li>
@@ -174,7 +168,7 @@
                   </defs>
                 </svg>
               </div>
-              <h2 class="text-[0.8rem] tracking-[0.05rem] !leading-[1.35] uppercase text-white mb-10">Chia sẻ cuộc sống
+              <h2 class="text-[0.8rem] tracking-[0.05rem] !leading-[1.35] text-white mb-10">Chia sẻ cuộc sống
                 hàng ngày với bạn bè và xem họ đang làm gì trên Checkly. Hơn nữa, bạn có thể lập bản đồ một thế giới của
                 riêng mình ! Giữ liên lạc với bạn thân qua tin nhắn và trò chuyện video, và xây dựng cộng đồng của mình!
               </h2>
@@ -182,70 +176,74 @@
                 data-group="page-title-buttons" data-delay="900">
                 <!-- Image QR -->
 
-                <div class="flex flex-wrap">
+                <div class="flex justify-center items-center flex-wrap">
                   <div class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full">
-                    <svg width="175" height="175" viewBox="0 0 175 175" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g filter="url(#filter0_d_1_1577)">
-                        <rect x="17.5" y="17.5" width="140" height="140" rx="10" fill="white"
-                          shape-rendering="crispEdges" />
-                        <rect x="20.5" y="20.5" width="134" height="134" rx="7" stroke="url(#paint0_linear_1_1577)"
-                          stroke-width="6" shape-rendering="crispEdges" />
-                      </g>
-                      <defs>
-                        <filter id="filter0_d_1_1577" x="0.799999" y="0.799999" width="173.4" height="173.4"
-                          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                          <feColorMatrix in="SourceAlpha" type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                          <feOffset />
-                          <feGaussianBlur stdDeviation="8.35" />
-                          <feComposite in2="hardAlpha" operator="out" />
-                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1577" />
-                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1577" result="shape" />
-                        </filter>
-                        <linearGradient id="paint0_linear_1_1577" x1="87.5" y1="17.5" x2="87.5" y2="157.5"
-                          gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#05F177" />
-                          <stop offset="0.325" stop-color="#FFCA00" />
-                          <stop offset="0.65" stop-color="#F93748" />
-                          <stop offset="1" stop-color="#00D1FE" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
+                    <div class="flex justify-center items-center">
+                      <svg width="175" height="175" viewBox="0 0 175 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_1_1577)">
+                          <rect x="17.5" y="17.5" width="140" height="140" rx="10" fill="white"
+                            shape-rendering="crispEdges" />
+                          <rect x="20.5" y="20.5" width="134" height="134" rx="7" stroke="url(#paint0_linear_1_1577)"
+                            stroke-width="6" shape-rendering="crispEdges" />
+                        </g>
+                        <defs>
+                          <filter id="filter0_d_1_1577" x="0.799999" y="0.799999" width="173.4" height="173.4"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset />
+                            <feGaussianBlur stdDeviation="8.35" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1577" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1577" result="shape" />
+                          </filter>
+                          <linearGradient id="paint0_linear_1_1577" x1="87.5" y1="17.5" x2="87.5" y2="157.5"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#05F177" />
+                            <stop offset="0.325" stop-color="#FFCA00" />
+                            <stop offset="0.65" stop-color="#F93748" />
+                            <stop offset="1" stop-color="#00D1FE" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
                     <p class="lead !text-[1.05rem] !leading-[1.6] font-medium">IOS</p>
                   </div>
 
                   <div class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full">
-                    <svg width="175" height="175" viewBox="0 0 175 175" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g filter="url(#filter0_d_1_1577)">
-                        <rect x="17.5" y="17.5" width="140" height="140" rx="10" fill="white"
-                          shape-rendering="crispEdges" />
-                        <rect x="20.5" y="20.5" width="134" height="134" rx="7" stroke="url(#paint0_linear_1_1577)"
-                          stroke-width="6" shape-rendering="crispEdges" />
-                      </g>
-                      <defs>
-                        <filter id="filter0_d_1_1577" x="0.799999" y="0.799999" width="173.4" height="173.4"
-                          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                          <feColorMatrix in="SourceAlpha" type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                          <feOffset />
-                          <feGaussianBlur stdDeviation="8.35" />
-                          <feComposite in2="hardAlpha" operator="out" />
-                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1577" />
-                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1577" result="shape" />
-                        </filter>
-                        <linearGradient id="paint0_linear_1_1577" x1="87.5" y1="17.5" x2="87.5" y2="157.5"
-                          gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#05F177" />
-                          <stop offset="0.325" stop-color="#FFCA00" />
-                          <stop offset="0.65" stop-color="#F93748" />
-                          <stop offset="1" stop-color="#00D1FE" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
+                    <div class="flex justify-center items-center">
+                      <svg width="175" height="175" viewBox="0 0 175 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_1_1577)">
+                          <rect x="17.5" y="17.5" width="140" height="140" rx="10" fill="white"
+                            shape-rendering="crispEdges" />
+                          <rect x="20.5" y="20.5" width="134" height="134" rx="7" stroke="url(#paint0_linear_1_1577)"
+                            stroke-width="6" shape-rendering="crispEdges" />
+                        </g>
+                        <defs>
+                          <filter id="filter0_d_1_1577" x="0.799999" y="0.799999" width="173.4" height="173.4"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset />
+                            <feGaussianBlur stdDeviation="8.35" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1577" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1577" result="shape" />
+                          </filter>
+                          <linearGradient id="paint0_linear_1_1577" x1="87.5" y1="17.5" x2="87.5" y2="157.5"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#05F177" />
+                            <stop offset="0.325" stop-color="#FFCA00" />
+                            <stop offset="0.65" stop-color="#F93748" />
+                            <stop offset="1" stop-color="#00D1FE" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
                     <p class="lead !text-[1.05rem] !leading-[1.6] font-medium">Google Play</p>
                   </div>
                 </div>
@@ -315,12 +313,12 @@
           <div class="widget">
             <h4 class="widget-title !mb-3" data-i18n="learn-more">Learn More</h4>
             <ul class="pl-0 list-none !mb-0">
-              <li><a class="text-[#60697b] hover:text-[#605dba]" href="#" data-i18n="about-us">About Us</a></li>
-              <li class="mt-[0.35rem]"><a class="text-[#60697b] hover:text-[#605dba]" href="#" data-i18n="our-story">Our
+              <li><a class="text-[#60697b] hover:text-[#ED6424]" href="#" data-i18n="about-us">About Us</a></li>
+              <li class="mt-[0.35rem]"><a class="text-[#60697b] hover:text-[#ED6424]" href="#" data-i18n="our-story">Our
                   Story</a></li>
-              <li class="mt-[0.35rem]"><a class="text-[#60697b] hover:text-[#605dba]" href="#"
+              <li class="mt-[0.35rem]"><a class="text-[#60697b] hover:text-[#ED6424]" href="#"
                   data-i18n="terms-of-use">Terms of Use</a></li>
-              <li class="mt-[0.35rem]"><a class="text-[#60697b] hover:text-[#605dba]" href="#"
+              <li class="mt-[0.35rem]"><a class="text-[#60697b] hover:text-[#ED6424]" href="#"
                   data-i18n="privacy-policy">Privacy Policy</a></li>
             </ul>
           </div>
@@ -347,7 +345,7 @@
                         class="!ml-[0.05rem] text-[#959ca9] text-[.75rem] absolute z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none origin-[0_0] px-4 py-[0.6rem] left-0 top-0"
                         for="mce-EMAIL2" data-i18n="email-address">Email Address</label>
                       <input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe2"
-                        class="btn btn-grape text-white !bg-[#605dba] border-[#605dba] hover:text-white hover:bg-[#605dba] hover:border-[#605dba] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#605dba] active:border-[#605dba] disabled:text-white disabled:bg-[#605dba] disabled:border-[#605dba] !relative z-[2] focus:z-[5] hover:!transform-none border-0">
+                        class="btn btn-grape text-white !bg-[#ED6424] border-[#ED6424] hover:text-white hover:bg-[#ED6424] hover:border-[#ED6424] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#ED6424] active:border-[#ED6424] disabled:text-white disabled:bg-[#ED6424] disabled:border-[#ED6424] !relative z-[2] focus:z-[5] hover:!transform-none border-0">
                     </div>
                     <div id="mce-responses2" class="clear">
                       <div class="response" id="mce-error-response2" style="display:none"></div>
@@ -375,10 +373,10 @@
 
   <!-- progress wrapper -->
   <div
-    class="progress-wrap fixed w-[2.3rem] h-[2.3rem] cursor-pointer block shadow-[inset_0_0_0_0.1rem_rgba(128,130,134,0.25)] z-[1010] opacity-0 invisible translate-y-3 transition-all duration-[0.2s] ease-[linear,margin-right] delay-[0s] rounded-[100%] right-6 bottom-6 motion-reduce:transition-none after:absolute after:content-['\e951'] after:text-center after:leading-[2.3rem] after:text-[1.2rem] after:text-[#605dba] after:h-[2.3rem] after:w-[2.3rem] after:cursor-pointer after:block after:z-[1] after:transition-all after:duration-[0.2s] after:ease-linear after:left-0 after:top-0 motion-reduce:after:transition-none after:font-Unicons">
+    class="progress-wrap fixed w-[2.3rem] h-[2.3rem] cursor-pointer block shadow-[inset_0_0_0_0.1rem_rgba(128,130,134,0.25)] z-[1010] opacity-0 invisible translate-y-3 transition-all duration-[0.2s] ease-[linear,margin-right] delay-[0s] rounded-[100%] right-6 bottom-6 motion-reduce:transition-none after:absolute after:content-['\e951'] after:text-center after:leading-[2.3rem] after:text-[1.2rem] after:text-[#ED6424] after:h-[2.3rem] after:w-[2.3rem] after:cursor-pointer after:block after:z-[1] after:transition-all after:duration-[0.2s] after:ease-linear after:left-0 after:top-0 motion-reduce:after:transition-none after:font-Unicons">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewbox="-1 -1 102 102">
       <path
-        class="fill-none stroke-[#605dba] stroke-[4] box-border transition-all duration-[0.2s] ease-linear motion-reduce:transition-none"
+        class="fill-none stroke-[#ED6424] stroke-[4] box-border transition-all duration-[0.2s] ease-linear motion-reduce:transition-none"
         d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
     </svg>
   </div>

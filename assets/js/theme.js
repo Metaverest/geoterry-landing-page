@@ -55,9 +55,9 @@ var theme = {
       },
       onStick: function() {
         var navbarClonedClass = this.clonedElem.classList;
-        if (navbarClonedClass.contains('transparent') && navbarClonedClass.contains('navbar-dark')) {
-          this.clonedElem.className = this.clonedElem.className.replace("navbar-dark","navbar-light");
-        }
+        // if (navbarClonedClass.contains('transparent') && navbarClonedClass.contains('navbar-dark')) {
+        //   this.clonedElem.className = this.clonedElem.className.replace("navbar-dark","navbar-light");
+        // }
       }
     };
     var banner = new Headhesive('.navbar', options);
